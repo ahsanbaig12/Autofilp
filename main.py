@@ -44,7 +44,7 @@ def autoflip_video():
 
     # Try to run the command
     try:
-        subprocess.run(autoflip_command, check=True, timeout=3500)
+        subprocess.run(autoflip_command, check=True, timeout=3600)
         print("AutoFlip processing finished successfully.")
         # Send the finished video back
         return send_file(output_path, as_attachment=True)
